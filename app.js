@@ -1,8 +1,7 @@
 const LinkedList = require('./LinkedList');
-const LlinkedList = require('./LinkedList');
 
-const ll = new LinkedList();
-ll.insertAtHead(10);
-ll.insertAtHead(20);
+const ll = LinkedList.fromValues(10, 20, 30, 40);
 
-console.log(ll);
+ll.print(ll);
+ll.insertAtIndex(2, 60);
+ll.print();
